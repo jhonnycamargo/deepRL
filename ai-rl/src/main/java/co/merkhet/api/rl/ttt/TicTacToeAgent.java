@@ -97,6 +97,11 @@ public class TicTacToeAgent {
 		this.stateHistory.add(state);
 	}
 
+	/**
+	 * V(St) <- V(St) + a[V(St+1) - V(St)]
+	 * 
+	 * @param environment
+	 */
 	public void update(Environment environment) {
 		int reward = environment.reward(this.symbol);
 		double target = reward;
