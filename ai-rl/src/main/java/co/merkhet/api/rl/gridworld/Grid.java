@@ -26,6 +26,7 @@ public class Grid {
 	private int cols;
 	private int i;
 	private int j;
+	@Getter
 	private Map<Pair<Integer, Integer>, Float> rewards;
 	@Getter
 	private Map<Pair<Integer, Integer>, List<GridAction>> actions;

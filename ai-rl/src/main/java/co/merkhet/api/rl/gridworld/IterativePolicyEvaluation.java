@@ -12,7 +12,7 @@ public class IterativePolicyEvaluation {
 
 	private final static double SMALL_ENOUGH = 1E-3;
 
-	private static void printValues(INDArray values, Grid g) {
+	static void printValues(INDArray values, Grid g) {
 		for (int i = 0; i < g.getRows(); i++) {
 			System.out.println("------------------------------------------------------------------------------------");
 			for (int j = 0; j < g.getCols(); j++) {
@@ -23,7 +23,7 @@ public class IterativePolicyEvaluation {
 		}
 	}
 
-	private static void printPolicy(INDArray policy, Grid g) {
+	static void printPolicy(INDArray policy, Grid g) {
 		for (int i = 0; i < g.getRows(); i++) {
 			System.out.println("------------------------------------------------------------------------------------");
 			for (int j = 0; j < g.getCols(); j++) {
